@@ -38,13 +38,13 @@ article {
 footer {
   line-height: 5vh;
   height: 10vh;
-  /* background-color: #333; */
+  background-color: #333;
   text-align: center;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
 footer p {
-  /* background-color: #333; */
+  background-color: #333;
   font-size: 10px;
 }
 footer span {
