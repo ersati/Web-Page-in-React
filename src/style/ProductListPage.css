@@ -1,10 +1,12 @@
 .products h1 {
   margin-bottom: 20px;
 }
+
 .products ul {
   list-style: square;
   text-decoration: none;
 }
+
 .products li {
   margin: 10px 0 10px 30px;
 }
@@ -13,19 +15,35 @@
   text-decoration: none;
   color: grey;
 }
+
 .products a:hover {
   text-decoration: underline;
   color: black;
 }
+
 .productinfo {
   text-align: center;
 }
+
 .productinfo h2 {
   margin-bottom: 15px;
 }
+
 .productinfo article {
   margin: 10px;
   font-size: 38px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.logo {
+  position: relative;
+  height: 150px;
+  width: 220px;
+  transform: translateX(210%);
+
+}
+
+.img__logo {
+  position: absolute;
 }

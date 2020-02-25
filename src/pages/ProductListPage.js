@@ -4,24 +4,35 @@ import "../style/ProductListPage.css";
 
 const products = ["Geranium", "Rose", "Tulip", "Daisy"];
 // const description = ["g", "r", "t", "d"];
-
 // const products = {
-//   names: ["Geranium", "Rose", "Tulip", "Daisy"],
-//   descriptions: ["g", "r", "t", "d"]
+//   name: ["Geranium", "Rose", "Tulip", "Daisy"],
+//   description: ["g", "r", "t", "d"]
 // };
 
 const ProductListPage = () => {
   const list = products.map(product => (
     <li key={product}>
-      <Link to={`/product/${product}`}>{product}</Link>
+      <Link
+        to={{
+          pathname: `/product/${product}`,
+
+          state: { text: "hello" }
+        }}>
+        {product}
+      </Link>
     </li>
   ));
 
-  //   const list = products.map((id, product) => (
-  //     <li key={product.name[id]}>
-  //       <Link to={`/product/${product.name[id]}`}>{product.name[id]}</Link>
-  //     </li>
-  //   ));
+  //   const list = Object.keys(products).map(product => {
+  //     // console.log(product.name);
+  //     debugger;
+  //     let arr1 = product.name;
+  //     return (
+  //       <li key={arr1}>
+  //         <Link to={`/product/${arr1}`}>{arr1}</Link>
+  //       </li>
+  //     );
+  //   });
 
   return (
     <div className="products">
